@@ -14,7 +14,13 @@ public class InterceptorCdPlayer {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        CdPlayerContext context = new CdPlayerContext();
+
+        context.setState(CdPlayerState.OFF);
+        System.out.println("CD Player is " + context.getState());
+
+        context.setState(CdPlayerState.ON);
+        System.out.println("CD Player is " + context.getState());
     }
-    
+
 }
