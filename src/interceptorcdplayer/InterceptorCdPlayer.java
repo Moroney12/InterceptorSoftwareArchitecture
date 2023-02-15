@@ -15,11 +15,15 @@ public class InterceptorCdPlayer {
      */
     public static void main(String[] args) {
         CdPlayerContext context = new CdPlayerContext();
+        ConcreteInterceptor powerInterceptor = new ConcreteInterceptor();
+        CDPlayerDispatcher dispatcher = new CDPlayerDispatcher(powerInterceptor);
 
         context.setState(CdPlayerState.OFF);
+        dispatcher.dispatch(context);
         System.out.println("CD Player is " + context.getState());
 
         context.setState(CdPlayerState.ON);
+        dispatcher.dispatch(context);
         System.out.println("CD Player is " + context.getState());
     }
 

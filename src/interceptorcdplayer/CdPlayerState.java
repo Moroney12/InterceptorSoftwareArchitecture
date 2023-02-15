@@ -9,5 +9,5 @@ package interceptorcdplayer;
  * @author adam_
  */
 public enum CdPlayerState {
-    ON, OFF 
+    ON, OFF
 }

@@ -8,15 +8,15 @@ package interceptorcdplayer;
  *
  * @author adam_
  */
-class CdPlayerContext {
+public class CDPlayerDispatcher {
 
-    private CdPlayerState state;
+    private Interceptor interceptor;
 
-    public CdPlayerState getState() {
-        return state;
+    public CDPlayerDispatcher(Interceptor powerInterceptor) {
+        this.interceptor = powerInterceptor;
     }
 
-    public void setState(CdPlayerState state) {
-        this.state = state;
+    public void dispatch(CdPlayerContext context) {
+        interceptor.execute(context);
     }
 }
