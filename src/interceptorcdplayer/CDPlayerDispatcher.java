@@ -8,6 +8,7 @@ package interceptorcdplayer;
  *
  * @author adam_
  */
+//The CDPlayerDispatcher class represents the Dispatcher.
 public class CdPlayerDispatcher {
 
     private Interceptor interceptor;

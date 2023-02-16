@@ -18,7 +18,7 @@ import static org.junit.Assert.assertEquals;
  * @author adam_
  */
 
-
+//This test verifies that the CD player can be turned on and off successfully.
 public class CDPlayerTest {
    @Test
    public void testOnOffButtons() {
