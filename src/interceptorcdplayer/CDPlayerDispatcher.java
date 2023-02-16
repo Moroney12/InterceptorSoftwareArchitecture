@@ -8,11 +8,11 @@ package interceptorcdplayer;
  *
  * @author adam_
  */
-public class CDPlayerDispatcher {
+public class CdPlayerDispatcher {
 
     private Interceptor interceptor;
 
-    public CDPlayerDispatcher(Interceptor powerInterceptor) {
+    public CdPlayerDispatcher(Interceptor powerInterceptor) {
         this.interceptor = powerInterceptor;
     }
 

@@ -16,7 +16,7 @@ public class InterceptorCdPlayer {
     public static void main(String[] args) {
         CdPlayerContext context = new CdPlayerContext();
         ConcreteInterceptor powerInterceptor = new ConcreteInterceptor();
-        CDPlayerDispatcher dispatcher = new CDPlayerDispatcher(powerInterceptor);
+        CdPlayerDispatcher dispatcher = new CdPlayerDispatcher(powerInterceptor);
 
         context.setState(CdPlayerState.OFF);
         dispatcher.dispatch(context);

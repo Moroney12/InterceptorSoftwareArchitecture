@@ -8,7 +8,7 @@ package interceptorcdplayer;
  *
  * @author adam_
  */
-class CdPlayerContext {
+public class CdPlayerContext {
 
     private CdPlayerState state;
 
