@@ -10,6 +10,7 @@ import interceptorcdplayer.ConcreteInterceptor;
 import interceptorcdplayer.Interceptor;
 import interceptorcdplayer.CdPlayerContext;
 import interceptorcdplayer.CdPlayerSubject;
+import interceptorcdplayer.LoggingInterceptor;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -24,16 +25,19 @@ public class CDPlayerTest {
     public void testOnOffButtons() {
         CdPlayerSubject subject = new CdPlayerSubject();
         Interceptor powerInterceptor = new ConcreteInterceptor();
-        CdPlayerDispatcher dispatcher = new CdPlayerDispatcher(powerInterceptor);
+        LoggingInterceptor loggingInterceptor = new LoggingInterceptor();
+        CdPlayerDispatcher dispatcher = new CdPlayerDispatcher(powerInterceptor, loggingInterceptor);
         CdPlayerContext context = new CdPlayerContext(subject);
-        
-        context.setState(CdPlayerState.OFF);
+
+        context.setState(CdPlayerState.OFF, null);
         dispatcher.dispatch(context);
         assertEquals(CdPlayerState.ON, context.getState());
+        assertEquals(null, context.getPlayingCD());
 
-        context.setState(CdPlayerState.ON);
+        context.setState(CdPlayerState.ON, null);
         dispatcher.dispatch(context);
         assertEquals(CdPlayerState.OFF, context.getState());
+        assertEquals(null, context.getPlayingCD());
     }
 
 }

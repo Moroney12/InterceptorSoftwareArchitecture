@@ -15,10 +15,10 @@ public class ConcreteInterceptor implements Interceptor {
     public void execute(CdPlayerContext context) {
         if (context.getState() == CdPlayerState.ON) {
             System.out.println("Turning CD Player off");
-            context.setState(CdPlayerState.OFF);
+            context.setState(CdPlayerState.OFF, null);
         } else {
             System.out.println("Turning CD Player on");
-            context.setState(CdPlayerState.ON);
+            context.setState(CdPlayerState.ON, context.getPlayingCD());
         }
     }
 }

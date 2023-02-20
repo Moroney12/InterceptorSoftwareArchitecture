@@ -16,14 +16,16 @@ public class InterceptorCdPlayer {
     public static void main(String[] args) {
         CdPlayerSubject subject = new CdPlayerSubject();
         ConcreteInterceptor powerInterceptor = new ConcreteInterceptor();
-        CdPlayerDispatcher dispatcher = new CdPlayerDispatcher(powerInterceptor);
+        LoggingInterceptor loggingInterceptor = new LoggingInterceptor();
+        CdPlayerDispatcher dispatcher = new CdPlayerDispatcher(powerInterceptor,loggingInterceptor);      
         CdPlayerContext context = new CdPlayerContext(subject);
-        
-        context.setState(CdPlayerState.OFF);
+
+        context.setState(CdPlayerState.OFF, null);
         dispatcher.dispatch(context);
         System.out.println("CD Player is " + context.getState());
 
-        context.setState(CdPlayerState.ON);
+        context.setPlayingCD("U2");
+        context.setState(CdPlayerState.ON, context.getPlayingCD());
         dispatcher.dispatch(context);
         System.out.println("CD Player is " + context.getState());
     }

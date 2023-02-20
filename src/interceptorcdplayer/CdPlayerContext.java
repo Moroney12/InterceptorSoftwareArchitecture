@@ -13,7 +13,9 @@ package interceptorcdplayer;
 //that contains information about the state of the program and provides context for the interceptors to operate in.
 public class CdPlayerContext implements Observer {
     private CdPlayerSubject subject;
+    private String playingCD;
 
+    
     public CdPlayerContext(CdPlayerSubject subject) {
         this.subject = subject;
         this.subject.attach(this);
@@ -23,12 +25,30 @@ public class CdPlayerContext implements Observer {
         return subject.getState();
     }
 
-    public void setState(CdPlayerState state) {
-        subject.setState(state);
+    /**
+     * @return the playingCD
+     */
+    public String getPlayingCD() {
+        return playingCD;
+    }
+
+    /**
+     * @param playingCD the playingCD to set
+     */
+    public void setPlayingCD(String playingCD) {
+        this.playingCD = playingCD;
+    }
+    
+    public void setState(CdPlayerState state, String cd) {
+        subject.setState(state, cd);
     }
 
     @Override
-    public void update(CdPlayerState state) {
+    public void update(CdPlayerState state, String playingCD) {
         System.out.println("CD Player state changed to " + state);
+        if (playingCD != null) {
+            System.out.println("Now playing CD: " + playingCD);
+        }
     }
 }
+

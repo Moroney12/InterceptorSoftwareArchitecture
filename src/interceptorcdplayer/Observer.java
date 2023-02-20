@@ -9,5 +9,5 @@ package interceptorcdplayer;
  * @author adam_
  */
 public interface Observer {
-    void update(CdPlayerState state);
+    void update(CdPlayerState state, String currentCD);
 }

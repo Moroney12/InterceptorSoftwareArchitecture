@@ -14,12 +14,16 @@ package interceptorcdplayer;
 public class CdPlayerDispatcher {
 
     private Interceptor interceptor;
+    private LoggingInterceptor interceptorTwo;
 
-    public CdPlayerDispatcher(Interceptor powerInterceptor) {
+    public CdPlayerDispatcher(Interceptor powerInterceptor,LoggingInterceptor logInterceptor) {
         this.interceptor = powerInterceptor;
+        this.interceptorTwo = logInterceptor;
     }
+    
 
     public void dispatch(CdPlayerContext context) {
         interceptor.execute(context);
+        interceptorTwo.execute(context);
     }
 }

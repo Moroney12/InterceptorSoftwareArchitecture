@@ -13,14 +13,16 @@ import java.util.List;
  */
 public class CdPlayerSubject {
     private CdPlayerState state;
+    private String currentCD;
     private List<Observer> observers = new ArrayList<>();
 
     public CdPlayerState getState() {
         return state;
     }
 
-    public void setState(CdPlayerState state) {
+    public void setState(CdPlayerState state, String cd) {
         this.state = state;
+        this.currentCD = cd;
         notifyObservers();
     }
 
@@ -34,7 +36,7 @@ public class CdPlayerSubject {
 
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update(state);
+            observer.update(state, currentCD);
         }
     }
 }
