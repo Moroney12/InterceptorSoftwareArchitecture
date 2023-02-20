@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorProject/InterceptorCdPlayer/src/interceptorcdplayer/CdPlayerState.java</file>
-            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorProject/InterceptorCdPlayer/src/interceptorcdplayer/CdPlayerContext.java</file>
-            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorProject/InterceptorCdPlayer/src/interceptorcdplayer/Interceptor.java</file>
-            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorProject/InterceptorCdPlayer/src/interceptorcdplayer/CDPlayerDispatcher.java</file>
-            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorProject/InterceptorCdPlayer/src/interceptorcdplayer/InterceptorCdPlayer.java</file>
-            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorProject/InterceptorCdPlayer/src/interceptorcdplayer/ConcreteInterceptor.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/Observer.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/CdPlayerSubject.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/test/interceptorproject/CDPlayerTest.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/CdPlayerDispatcher.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/CdPlayerContext.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/ConcreteInterceptor.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/CdPlayerState.java</file>
+            <file>file:/C:/Users/adam_/Desktop/MastersUL/CS5722%20(SOFTWARE%20ARCHITECHTURE)/InterceptorSoftwareArchitecture/src/interceptorcdplayer/InterceptorCdPlayer.java</file>
         </group>
     </open-files>
 </project-private>
