@@ -25,16 +25,10 @@ public class CdPlayerContext implements Observer {
         return subject.getState();
     }
 
-    /**
-     * @return the playingCD
-     */
     public String getPlayingCD() {
         return playingCD;
     }
 
-    /**
-     * @param playingCD the playingCD to set
-     */
     public void setPlayingCD(String playingCD) {
         this.playingCD = playingCD;
     }

@@ -8,7 +8,7 @@ package interceptorcdplayer;
  *
  * @author adam_
  */
-//The PowerInterceptorImpl class represents the Concrete Interceptor.
+//The ConcreteInterceptor class represents the Concrete Interceptor.
 //ConcreteInterceptor can be represented as a class that implements the Interceptor interface, which performs the actual interception.
 public class ConcreteInterceptor implements Interceptor {
 
